@@ -1,27 +1,7 @@
 <html>
 <head>
-<script>
-function httpGetAsync(theUrl, callback) {
-	if (window.XMLHttpRequest) {
-        xmlHttp = new XMLHttpRequest();
-    } else {
-        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-	
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", 'https://cors-anywhere.herokuapp.com/' + theUrl, true);
-    xmlHttp.send(null);
-}
-
-httpGetAsync("http://78.111.62.23", function(response) {
-	document.write(response);
-});
-</script>
+	<meta http-equiv="refresh" content="URL=http://78.111.62.23" />
 </head>
 <body>
-
 </body>
 </html>
